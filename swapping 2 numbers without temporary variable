@@ -1,0 +1,15 @@
+#include<stdio.h> //header files
+#include<conio.h>
+int main     //main function execution of c programs starts from here 
+{
+     int a,b;    //declaring variables
+     printf("enter two integers for swapping : ");    // asking user to enter two integers
+     scanf("%d%d",&a,&b);      // storing numbers entered by user
+     printf("before swapping : %d  %d ",a,b);    //displaying numbers before swapping
+     a=a+b;     //logic for swapping
+     b=a-b;
+     a=a-b;
+     printf("after swapping : %d  %d ",a,b);    //showing swapped numbers
+     
+     return 0;     //exit status
+}
