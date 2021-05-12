@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int item_choice;                                                                                                 //variable declaration
+	printf("Please view menu : \n  1.French Fries \n  2.Burger \n  3.Pizza \n  4.Pasta \n  5.Sandwich \n");          //menu 
+	printf("Enter the item number : ");                                                                              //taking input
+	scanf("%d",&item_choice);
+	
+	switch(item_choice)                                                                                              //switch case
+	{
+		case 1:
+			printf("\nFood item - French Fries \nPrice - Rs.99 \n\n\a");
+			break;
+		case 2:
+			printf("\nFood item - Burger \nPrice - Rs.129 \n\n\a");
+			break;
+		case 3:
+			printf("\nFood item - Pizza \nPrice - Rs.239 \n\n\a");
+			break;
+		case 4:
+			printf("\nFood item - Pasta \nPrice - Rs.179 \n\n\\a");
+			break;
+		case 5:
+			printf("\nFood item - Sandwich \nPrice - Rs.149 \n\n\a");
+			break;
+		default:
+			printf("\ninvalid choice !!\n\n\a");
+			
+	}
+	printf("========== Please visit again =========");                                                                 //statement after order
+	return 0;	                                                                                                         //exit status
+}
