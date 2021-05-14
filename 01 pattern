@@ -1,0 +1,15 @@
+#include<stdio.h>              //header files
+#include<conio.h>
+int main()                     //main function
+{
+	int i,j;                     // variable declaration
+	for(i=0;i<6;i++)             //outer loop tp calculate lines 
+	{
+		for(j=0;j<=i;j++)          //inner loop to print 01
+		{
+			printf("01");
+		}
+	    printf("\n");            //to move to next line
+	}
+	return 0;                    //exit status 
+}
