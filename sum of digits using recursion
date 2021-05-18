@@ -1,0 +1,24 @@
+#include<stdio.h>
+int sum_of_digits(int n);                               //function declaration
+int main()
+{
+	int num,sum=0,m,p;
+	printf("Enter a number ");                            //taking input
+	scanf("%d",&num);
+	p=num;
+	sum=sum_of_digits(num);                               //function call
+	printf("Sum of digits of %d is %d ",p,sum);
+  
+	return 0;
+}
+int sum_of_digits(int n)                                //function defination
+{
+	if(n==0)
+	{
+		return 0;
+	}
+	else
+	{
+		return(n%10+sum_of_digits(n/10));
+	}
+}
