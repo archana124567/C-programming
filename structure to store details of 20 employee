@@ -10,7 +10,7 @@ void displayDeitals(struct employee emp[], int n) {
    printf("Employee no: %d \n",n+1);
    printf("Employee name: %s \n",emp[n].name);
    printf("Employee department name: %s \n",emp[n].dept_name);
-   printf("Employee salary : %d \n",15965+n+1);
+   printf("Employee salary : %d \n",emp[n].salary);
 }
 int main() {
    int n=19,i=0;
@@ -18,12 +18,17 @@ int main() {
    for(i=0;i<=19;i++)
    {
    	    printf("enter employee name : ");
-   	    scanf("%s",emp[i].name);
+   	    scanf("%s",&emp[i].name);
    }
    for(i=0;i<=19;i++)
    {
    	    printf("enter employee department name : ");
-   	    scanf("%s",emp[i].dept_name);
+   	    scanf("%s",&emp[i].dept_name);
+   }
+   for(i=0;i<=19;i++)
+   {
+   	    printf("enter employee salary : ");
+   	    scanf("%d",&emp[i].salary);
    }
    for(i= 0; i<=19; i++)
    {
