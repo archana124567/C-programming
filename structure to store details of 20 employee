@@ -1,0 +1,33 @@
+#include <stdio.h>
+struct employee {
+   int empno;
+   char name[30];
+   char dept_name[30];
+   int salary;
+};
+void displayDeitals(struct employee emp[], int n) {
+   printf("\n\n --- Employee %d ---- \n",n+1);
+   printf("Employee no: %d \n",n+1);
+   printf("Employee name: %s \n",emp[n].name);
+   printf("Employee department name: %s \n",emp[n].dept_name);
+   printf("Employee salary : %d \n",15965+n+1);
+}
+int main() {
+   int n=19,i=0;
+   struct employee emp[20];
+   for(i=0;i<=19;i++)
+   {
+   	    printf("enter employee name : ");
+   	    scanf("%s",emp[i].name);
+   }
+   for(i=0;i<=19;i++)
+   {
+   	    printf("enter employee department name : ");
+   	    scanf("%s",emp[i].dept_name);
+   }
+   for(i= 0; i<=19; i++)
+   {
+   	displayDeitals(emp, i);
+   }
+   return 0;
+}
